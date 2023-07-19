@@ -3,6 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 author 'Bimbo Scripts'
+description 'This is made by bimbohaha -on- discord https://discord.gg/DgFhnk84b7'
 
 ui_page "html/index.html"
 
