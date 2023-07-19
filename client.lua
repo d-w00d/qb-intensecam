@@ -10,9 +10,13 @@ local changeCooldown, lastView = 0, 0
     [297719966] = true
 }]]
 
+-----------------------
+--Config weapons here--
 BlackListedCarGuns = {
     --[`weapon_name`] = true,
 }
+-----------------------
+-----------------------
 
 QBCore = exports['qb-core']:GetCoreObject()
 
