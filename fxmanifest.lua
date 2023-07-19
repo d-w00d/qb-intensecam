@@ -13,5 +13,6 @@ files {
   "html/style.css",
 }
 
+dependency 'qb-core'
 
 client_script 'client.lua'
