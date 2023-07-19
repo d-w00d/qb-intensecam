@@ -2,6 +2,7 @@
 
 is a first person in car camera script 
 has configs for
+
 -- Commands
 /crosshair - toggles on/off
 /crosshair (color) - changes crosshair color
