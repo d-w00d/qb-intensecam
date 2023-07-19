@@ -1,12 +1,20 @@
 # qb-intensecam
+
+is a first person in car camera script 
+has configs for
+
+-- Commands
+/crosshair - toggles on/off
+/crosshair (color) - changes crosshair color
+
+-- CONFIG.lua
+config for guns allowed in cars
+config for allowed cars that can be shooten out of
+
 If you need help dm my discord bimbohaha
 or go to my discord 
 
 ### (https://discord.gg/DgFhnk84b7)
-
-Go to 
-# config.lua 
-to change configurations
 
 # qb-core
 
