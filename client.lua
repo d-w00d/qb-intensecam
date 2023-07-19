@@ -4,19 +4,14 @@ local wasInVehicle = false -- A check for if they were in the vehicle.
 local disableAim = false -- Variable used to check if their aim should be disabled whilst in a vehicle.
 local changeCooldown, lastView = 0, 0
 
-local policeBikes = {
+--[[local blacklistedcars = {
     [-1921512137] = true,
     [-1145771600] = true,
     [297719966] = true
-}
+}]]
 
 BlackListedCarGuns = {
-    [`WEAPON_GLOCK18`] = true,
-    [`weapon_appistol`] = false,
-    [`weapon_microsmg`] = false,
-    [`weapon_minismg`] = true,
-    [`WEAPON_TEC9`] = true,
-    [`weapon_machinepistol`] = true,
+    --[`weapon_name`] = true,
 }
 
 QBCore = exports['qb-core']:GetCoreObject()
@@ -209,10 +204,10 @@ CreateThread(function()
             if isAiming then
                 manageCrosshair(true)
                 local vehicle = GetVehiclePedIsIn(plyPed, false)
-                local model = GetEntityModel(vehicle)
+                --local model = GetEntityModel(vehicle)
                 local inVehicle = vehicle ~= 0
-                local class = GetVehicleClass(vehicle)
-                local isBike = class == 8 or class == 13 or policeBikes[model]
+                --local class = GetVehicleClass(vehicle)
+                --local isBike = class == 8 or class == 13 or --blacklistedcars[model]
                 if inVehicle and isAiming and not isBike then
                     wasInVehicle = true
                     if shouldDisable and not disableAim then
